@@ -97,10 +97,22 @@ iframe {
 
 .container {
 	--offset-container: 14px;
-	max-width: calk(var(--offset-container) * 2 + 1300);
+	max-width: calk(var(--offset-container) * 2 + 1300px);
 	padding: 0 var(--offset-container);
 	margin: 0 auto;
 }
 .svg-sprite {
 	display: none;
+}
+@media (width >= 620px) {
+	.container {
+		--offset-container: 40px;
+	}
+}
+@media (width >= 860px) {
+}
+@media (width >= 1140px) {
+	.container {
+		--offset-container: 70px;
+	}
 }

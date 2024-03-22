@@ -20,3 +20,12 @@
 .header__cart:hover {
 	color: var(--beige);
 }
+@media (width >= 540) {
+	.header {
+		position: absolute;
+		top: 40px;
+	}
+	.header__logo {
+		width: 164px;
+	}
+}
