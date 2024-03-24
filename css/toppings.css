@@ -42,13 +42,17 @@
 	font-size: 14px;
 	color: var(--beige);
 	border: 1px solid transparent;
+	cursor: pointer;
 }
-.toppings__label:focus-visible+.topping__label {
+.toppings__label:hover {
+	color: var(--orange);
+}
+.toppings__checkbox:focus-visible+.topping__label {
 	background: var(--white);
 	border-color: #b66200;
 	color: var(--orange);
 }
-.toppings__label:checked+.toppings__label {
+.toppings__checkbox:checked+.toppings__label {
 	background: var(--orange);
 	color: var(--light);
 }
