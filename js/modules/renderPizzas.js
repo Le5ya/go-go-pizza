@@ -31,7 +31,7 @@ const createCard = (data) => {
 export const renderPizzas = async (toppings) => {
   const pizza = await getData(
     `https://elfin-petite-temperature.glitch.me/api/products${
-      toppings ? `?topping=${toppings}` : ""
+      toppings ? `?toppings=${toppings}` : ""
     }
     `
   );
